@@ -1,0 +1,15 @@
+.medicinebox {
+    width: 55%;
+    padding: 0 40px 40px 0;
+}
+.medicinepic {
+    width: 300px;
+}
+.medicine_descbox {
+    width:85%;
+}
+.medicinepic_bot {
+    width:500px;
+    height: auto;
+   
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<title>Karl's Drug Store - Home</title>
+		<link rel = "icon" href = "https://cdn.iconscout.com/icon/free/png-256/drug-1779101-1516329.png"
+        type = "image/x-icon">
+		<link href='https://fonts.googleapis.com/css?family=Roboto Condensed' rel='stylesheet'>
+		<link href='https://fonts.googleapis.com/css?family=Cabin' rel='stylesheet'>
+		<link rel="stylesheet" type="text/css" href="styles_global.css" /> 
+		<link rel="stylesheet" type="text/css" href="orderpage.css" />
+	</head>
+<body>
+    <!--NAVIGATION BAR-->
+    <div class ="topnav">
+	    <div>
+	         <h2 class="main-title">Karl's Drug Store</h2>
+		</div>
+	    <div>
+	        <a href="./main.htm">Home</a>
+	        <a class = "active" href = "./orderpage.html"> Order</a>
+	        <a href = "./prod_list.html">Products</a>
+	        <a href = "./main.htm">Checkout</a>
+	        <a href = "./main.htm">Logout</a></span>
+        </div>
+	</div>
+	<section class="main-container">
+	<!--SIDEBAR-->	
+		<div class="sidebar">
+			<h2>Welcome to Karl's</h2>
+            <form action="">
+				<b><label for="search">Search</label></b>
+				<span class="sb-search"><input type="search" id="search" name="search"></span>
+				<span class="flex-end-submit"><input type="submit"></span>
+			  </form>
+			<h3>Featured Products</h3>
+			    <ul>
+					<li>Product A</li>
+					<li>Product B</li>
+					<li>Product C</li>
+					<li>Product D</li>
+				</ul>
+			<h3>Contact</h3>
+			<span>Tel: 911</span><br>
+			<span>Email: info@karlsdrugstore.com</span>
+		</div>
+	<!--MAIN CONTENT-->	
+		<div class="primary">
+			<div id="gallery">
+				<div class="gal-img"><img src="./images/vitC.jpg"></div>
+				<div class="gal-img"><img src="./images/paracetamol.jpg"></div>
+				<div class="gal-img"><img src="./images/vitb.jpg"></div>
+				<div class="gal-img"><img src="./images/antihis.jpg"></div>
+			  </div>
+			<main>
+			<div class="description">
+				<h1 id="title">Order Form</h1>  
+				<p id="description">Please fill with your complete details.</p>
+				</div>   
+			  <div class="form-container">
+			  <form id="survey-form" action="./ordersuccess.html">
+				  <label  id="name-label" for="name">Name</label>
+				  <input type="text" id="name" name="name" placeholder="Your Name..." required>
+			  
+				  <label id="email-label" for="email">Email</label>
+				  <input type="email" id="email" name="email" placeholder="Your Email Address..." required>
+				
+				  <label  id="number-label" for="number">Age</label>
+				  <input type="number" id="number" name="age" placeholder="Your Age..." min="0" max="99">
+				   
+				  <label>Payment Method</label>
+				  <select id="dropdown" name="dropdown">
+					<option value="a">Cash on Delivery</option>
+					<option value="b">Credit/Debit Card</option>
+					<option value="c">Gcash/PayMaya</option>
+				  </select>
+				<span>
+					<p>Are you a first time costumer?
+					<label>
+					  <input name="answer" value="yes" type="radio" checked>Yes</label>
+			  
+					<label><input name="answer" value="no" type="radio">No</label></p>
+				  </span>
+				<span>
+				<p>Please verify your order.
+				<label for="loving"><input type="checkbox" name="prod1" value="1"> Paracetamol</label>
+				  <label for="lazy"><input type="checkbox" name="prod2" value="2"> Antihistamine</label>
+				  <label for="energetic"><input type="checkbox" name="prod3" value="3"> Vitamin B</label>
+				  <label for="energetic"><input type="checkbox" name="prod4" value="4"> Vitamin C</label></p>
+				</span>
+				
+				<label for="subject">Your Message:</label><br><br>
+				  <textarea id="comments" name="comment" placeholder="Specifications" style="height:200px"></textarea>
+				
+				<button type="submit" id="submit">Submit</button>
+				
+			  </form>
+			</main>
+			</div>
+	    </div>
+	</section>
+	 <!--FOOTER-->	
+		<footer>
+			<p>Copyright &copy; 2021 | Karl's Drug Store | All Rights Reserved.</p>
+		</footer>
+	</body>
+</html>
