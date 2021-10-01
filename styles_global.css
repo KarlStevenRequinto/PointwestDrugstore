@@ -132,3 +132,8 @@ footer p {
 .searchbox input::placeholder {
     color: blanchedalmond;
 }
+
+.product_descriptionbox {
+    height: 300px;
+
+}
